@@ -1,0 +1,195 @@
+DEMO 
+Descripción General
+Este es un videojuego educativo desarrollado en Python con Pygame que ayuda a aprender verbos irregulares en inglés a través de mecánicas de plataforma y batalla. Objetivo del Juego
+El jugador debe derrotar enemigos respondiendo correctamente preguntas sobre verbos irregulares en inglés. El juego tiene 2 niveles de dificultad:
+
+Nivel 1: Selección múltiple (15 verbos correctos para pasar)
+Nivel 2: Completar el verbo (10 verbos correctos para ganar)
+
+¡CUIDADO! Si cometes 7 errores, pierdes el juego.
+Requisitos del Sistema
+Software Necesario:
+- Python 3.7 o superior
+- Pygame 2.0 o superior
+Instalación de Pygame:
+install pygame
+projectp/
+
+ game.py                    # Archivo principal del juego
+
+ P1.png                      # Fondo del nivel 1 (opcional)
+ nivel2.jpg                  # Fondo del nivel 2 (opcional)
+ flecha_tiro.png            # Imagen de la flecha (opcional)
+ flecha1.png a flecha7.png  # Animación de disparo (opcional)
+
+ ganar.mp3                  # Sonido de respuesta correcta (opcional)
+ perder.mp3                 # Sonido de respuesta incorrecta (opcional)
+
+ animacion/
+ quieto.png             # Frame personaje quieto (opcional) frame/
+ frame2.png
+ frame3.png
+ frame4.png
+ enemy/
+ enemy1.png
+ enemy2.png 
+ enemy3.png
+ enemy4.png
+Ejecución del Juego
+Paso 1: Abrir Terminal/CMD
+Windows:
+cd ruta/a/tu/carpeta
+python juego.py
+Mac/Linux:
+cd ruta/a/tu/carpeta
+python3 juego.py
+Paso 2: El juego se iniciará en una ventana de 800x600 píxeles
+Controles del Juego
+Movimiento:
+
+← / A: Mover a la izquierda
+→ / D: Mover a la derecha
+↑ / W: Saltar
+
+Combate:
+
+Z: Disparar flecha (se puede disparar siempre, pero solo mata al enemigo si respondiste correctamente)
+
+Batalla (Nivel 1):
+
+Click del ratón: Seleccionar opciones de respuesta
+
+Batalla (Nivel 2):
+
+Teclado: Escribir la respuesta
+ENTER: Enviar respuesta
+Mecánicas del Juego
+1️⃣ NIVEL 1: Selección Múltiple
+Funcionamiento:
+
+Aparece un enemigo que se acerca al jugador
+Cuando están cerca, se activa la batalla
+Se muestra una pregunta: "¿Cuál es el pasado de [verbo]?"
+3 opciones de respuesta aparecen en pantalla
+Puedes hacer clic en todas las opciones para verificarlas
+Las opciones cambian de color:
+
+🟢 Verde: Respuesta correcta
+🔴 Rojo: Respuesta incorrecta
+
+
+
+Sistema de Puntos:
+
+✅ Respuesta correcta: +50 puntos
+❌ Respuesta incorrecta: -10 puntos y +1 error
+
+Progreso:
+
+Debes responder correctamente 15 verbos para pasar al Nivel 2
+Si acumulas 7 errores, pierdes el juego
+
+Disparar Flechas:
+
+Puedes disparar en cualquier momento con la tecla Z
+La flecha solo elimina al enemigo si respondiste correctamente
+Si no respondiste correctamente, la flecha pasa de largo
+
+
+2️ NIVEL 2: Completar el Verbo
+Funcionamiento:
+
+Aparece un enemigo (igual que en Nivel 1)
+Se muestra:
+
+El verbo en presente en inglés (ej: "begin")
+El verbo en español (ej: "empezar")
+El verbo parcialmente oculto (ej: "beg___")
+
+
+Debes escribir el verbo completo en pasado
+Presiona ENTER para verificar
+
+Ayuda Visual:
+
+El juego te muestra las primeras 3 letras del verbo
+Ejemplo: Si el verbo es "began", verás "beg___"
+
+Sistema de Puntos:
+
+Respuesta correcta: +50 puntos
+Respuesta incorrecta: -10 puntos y +1 error
+
+gana:
+
+Debes completar correctamente 10 verbos para ganar
+Si acumulas 7 errores, pierdes el juego
+Interfaz de Usuario
+Esquina Superior Izquierda:
+Puntuación: 150
+Nivel: 1
+Verbos correctos: 5/15
+Errores: 2/7
+Esquina Superior Derecha:
+Movimiento: ← → / a d | Salto: ↑ / w
+Disparar: Z (mata enemigo solo si respondiste bien)
+Contador de Errores:
+
+Si tienes 5 o más errores, el contador se pone ROJO para advertirte
+Estrategia
+Para el Nivel 1:
+
+Hacer clic en todas las opciones para aprender cuál es la correcta
+Observar los patrones de los verbos irregulares
+Dispara la flecha después de seleccionar la respuesta correcta
+Memoriza las respuestas correctas para futuros encuentros
+
+Para el Nivel 2:
+
+Lee el verbo en presente para identificar el verbo
+Usa la traducción al español como ayuda adicional
+Mira las primeras letras que el juego te muestra
+Piensa antes de escribir para evitar errores
+Recuerda que solo tienes 7 errores en total
+
+ Lista de Verbos Incluidos
+El juego incluye 86 verbos irregulares como:
+
+arise → arose
+be → was/were
+beat → beat
+become → became
+begin → began
+break → broke
+bring → brought
+buy → bought
+catch → caught
+come → came
+do → did
+eat → ate
+go → went
+have → had
+make → made
+see → saw
+take → took
+write → wrote
+...
+
+
+Valor Educativo
+Beneficios de Aprendizaje:
+
+Práctica activa de verbos irregulares
+Retroalimentación inmediata (verde/rojo)
+Sistema de progresión motivador
+Dos niveles de dificultad para reforzar conocimiento
+ Ayuda contextual en Nivel 2 (verbo en presente)
+
+ Consejos para Mejorar tu Puntuación
+
+sin afan: Leer bien cada pregunta
+Aprende de los errores: Las respuestas incorrectas también enseñan
+Usa el Nivel 1 para aprender: Haz clic en todas las opciones
+Memoriza los patrones: Muchos verbos siguen patrones similares
+Gestiona tus errores: Solo tienes 7 intentos fallidos
+
